@@ -36,4 +36,19 @@
   color: black;
 }
 
+.help-container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+/* .form-help-container {
+} */
+
+.searchbar {
+  margin-top: 10px;
+  /* width: 2px; */
+  /* justify-content:center; */
+}
+
 

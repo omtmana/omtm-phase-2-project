@@ -3,6 +3,14 @@ import SubwayCard from "./SubwayCard"
 
 const Subway = ({stations}) => {
    return (
+   <div>
+      <div className="searchbar">
+            <input
+            type="text"
+            name="search"
+            placeholder="Search Station" 
+            />
+      </div>
       <div className="subway-station-container">
          {
             stations.map((station) => {
@@ -10,6 +18,7 @@ const Subway = ({stations}) => {
             })
          }
       </div>
+   </div>
    )
 }
 
