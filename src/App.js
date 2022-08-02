@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import React , { useState, useEffect } from 'react';
+import About from './components/About';
+import Help from './components/Help';
+import Subway from './components/Subway';
+import Home from './components/Home';
+import { BrowserRouter as Router , Routes , Route , Link } from 'react-router-dom';
 import './App.css';
 
 function App() {
+  const[stations , setStations]=useState([])
+
+  useEffect(() => {
+    fetch('https://mtaapi.herokuapp.com/stations')
+    .then((res) => res.json())
+    .then((stations) => setStations(stations.result))
+  } , [])
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <nav className='navigation-bar'>
+          <Link to="/"> Home </Link>
+          <Link to="/subway"> Subway </Link>
+          <Link to="/about"> About </Link>
+          <Link to="/help"> Help </Link>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/subway" element={<Subway stations={stations} />}  />
+        </Routes>
+      </Router>
     </div>
   );
 }
