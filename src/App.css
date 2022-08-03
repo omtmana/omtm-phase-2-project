@@ -26,6 +26,18 @@
   width: 1000px;;
 }
 
+.home-head {
+  font-size: 4em;
+}
+
+.home-body {
+  font-size: 60px;
+}
+
+.home-header {
+  position: inherit;
+ 
+}
 
 
 .subway-station-container {
