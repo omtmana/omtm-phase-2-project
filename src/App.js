@@ -3,6 +3,7 @@ import About from './components/About';
 import Help from './components/Help';
 import Subway from './components/Subway';
 import Home from './components/Home';
+import Time from './components/Time';
 import { BrowserRouter as Router , Routes , Route , Link } from 'react-router-dom';
 import './App.css';
 
@@ -27,12 +28,20 @@ function App() {
           <Link to="/subway"> Subway </Link>
           <Link to="/about"> About </Link>
           <Link to="/help"> Help </Link>
+          <Link to="/time"> Time </Link>
+          <div style={{height:"100%" , position:"absoulute" , right:"0"}}>
+            <img src="Untitled.png" style={{height:"100%"}} />
+          </div>
         </nav>
+        {/* <div className="metrocard-pic">
+        </div> */}
+          <img style={{backgroundImage: "url(../public/Untitled.png)"}} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home className="home-page"/>} />
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
           <Route path="/subway" element={<Subway stations={stations} searchStation={searchStation} onSearchStation={setSearchStation} displayedStations={displayedStations} />}  />
+          <Route path="/time" element={<Time />} />
         </Routes>
       </Router>
     </div>

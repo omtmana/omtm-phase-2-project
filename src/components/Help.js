@@ -22,6 +22,11 @@ const Help = () => {
 
    const handleSubmit = ((e) => {
       e.preventDefault()
+      setFirstName('');
+      setLastName('');
+      setEmail('');
+      setTextBox('');
+
       fetch('http://localhost:3000/credentials', {
          method: "POST",
          headers: {
@@ -43,29 +48,29 @@ const Help = () => {
    return (
       <div className="help-container">
          <div className="form-help-container">
-            <form onSubmit={handleSubmit}>
-               <input
+            <form onSubmit={handleSubmit} className="handle-submit-help-form">
+               <input className="help-first-name"
                   type="text"
                   name="first name"
                   placeholder="First Name"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                />
-               <input
+               <input className="help-last-name"
                   type="text"
                   name="last name"
                   placeholder="Last Name"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                />
-               <input
+               <input className="help-email"
                   type="text"
                   name="email"
                   placeholder="email address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                />
-               <input
+               <input className="help-text-box"
                   type="text"
                   name="text box"
                   placeholder="Write your questions here"
