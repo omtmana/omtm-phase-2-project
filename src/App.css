@@ -1,21 +1,35 @@
+/* * {
+  background-image: url(../public/Untitled.png);
+  background-size: cover;
+  background-blend-mode: screen;
+  background-position: 10px 20px;
+} */
+
+
+
 .App {
   text-align: center;
-  /* background-image: url(../public/259cc432-face-4133-8338-961e64f2cef4.gif); */
-  /* margin: 0; */
+  /* background-image: url(../public/Untitled.png); */
+  background-size: cover;
+  background-blend-mode: screen;
+  background-position: 10px 20px;
+  margin: 0;
   /* background-repeat: repeat-y; */
 }
 
+
 .subway-station-container {
   display: flex;
-  flex-wrap:wrap;
-  justify-content:center;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
   margin-top: 10px;
 
 }
+
 .navigation-bar {
-  background-color:darkgrey;
-  height: 50px;
+  background-color: darkgrey;
+  height: 80px;
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -50,5 +64,3 @@
   /* width: 2px; */
   /* justify-content:center; */
 }
-
-

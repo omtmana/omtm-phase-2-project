@@ -8,6 +8,7 @@ import './App.css';
 
 function App() {
   const[stations , setStations]=useState([])
+  const[searchStation, setSearchStation]=useState("")
 
   useEffect(() => {
     fetch('https://mtaapi.herokuapp.com/stations')
@@ -15,6 +16,9 @@ function App() {
     .then((stations) => setStations(stations.result))
   } , [])
   
+  const displayedStations = stations.filter((station) => {
+    return station.name.toLowerCase().includes(searchStation.toLowerCase())
+  })
   return (
     <div className="App">
       <Router>
@@ -28,7 +32,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
-          <Route path="/subway" element={<Subway stations={stations} />}  />
+          <Route path="/subway" element={<Subway stations={stations} searchStation={searchStation} onSearchStation={setSearchStation} displayedStations={displayedStations} />}  />
         </Routes>
       </Router>
     </div>
