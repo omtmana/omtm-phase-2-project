@@ -4,8 +4,9 @@ import SubwayCard from "./SubwayCard"
 const Subway = ({ stations, searchStation, onSearchStation, displayedStations  }) => {
    return (
       <div>
-         <div className="searchbar">
+         <div>
             <input
+               className="searchbar"
                type="text"
                name="search"
                placeholder="Search Station"
