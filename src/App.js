@@ -25,10 +25,10 @@ function App() {
     <div className="App">
       <Router>
         <nav className='navigation-bar'>
-          <Link className='home' to="/"> Home </Link>
-          <Link to="/subway" className='subway'> Subway </Link>
+          <Link className='home' to="/"> HOME </Link>
+          <Link to="/subway" className='subway'> SUBWAY </Link>
           {/* <Link to="/about"> About </Link> */}
-          <Link to="/help" className='help'> Help </Link>
+          <Link to="/help" className='help'> HELP </Link>
           {/* <Link to="/time"> Time </Link> */}
           <div style={{height:"100%" , position:"absoulute" , right:"0"}}>
             <img src="Untitled.png" style={{height:"100%"}} />
