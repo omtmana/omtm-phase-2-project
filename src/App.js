@@ -25,6 +25,9 @@ function App() {
     <div className="App">
       <Router>
         <nav className='navigation-bar'>
+          <div style={{ height: "100%", position: "absoulute", right: "0" }}>
+            <img src="Untitled.png" style={{ height: "100%" }} />
+          </div>
           <Link className='home' to="/"> HOME </Link>
           <Link to="/subway" className='subway'> SUBWAY </Link>
           {/* <Link to="/about"> About </Link> */}

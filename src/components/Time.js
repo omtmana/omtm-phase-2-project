@@ -15,7 +15,6 @@ const Time = ({ stations }) => {
       setCurrentTime(x1);
    }
 
-
    useEffect(() => {
       setTimeout(() => {
          updateDate()
