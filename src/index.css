@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+body {
+  background-color: rgba(255, 255, 0, 0.17);
+}
+
 /* body { */
   /* background-color: rgba(255, 255, 0, 0.598); */
   /* background-image: url(../public/Untitled.png);

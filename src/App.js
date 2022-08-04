@@ -14,7 +14,8 @@ function App() {
   useEffect(() => {
     fetch('https://mtaapi.herokuapp.com/stations')
     .then((res) => res.json())
-    .then((stations) => setStations(stations.result))
+    .then((stations) => {
+      setStations(stations.result)})
   } , [])
   
   const displayedStations = stations.filter((station) => {
@@ -24,11 +25,11 @@ function App() {
     <div className="App">
       <Router>
         <nav className='navigation-bar'>
-          <Link to="/"> Home </Link>
-          <Link to="/subway"> Subway </Link>
-          <Link to="/about"> About </Link>
-          <Link to="/help"> Help </Link>
-          <Link to="/time"> Time </Link>
+          <Link className='home' to="/"> Home </Link>
+          <Link to="/subway" className='subway'> Subway </Link>
+          {/* <Link to="/about"> About </Link> */}
+          <Link to="/help" className='help'> Help </Link>
+          {/* <Link to="/time"> Time </Link> */}
           <div style={{height:"100%" , position:"absoulute" , right:"0"}}>
             <img src="Untitled.png" style={{height:"100%"}} />
           </div>
@@ -41,7 +42,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/help" element={<Help />} />
           <Route path="/subway" element={<Subway stations={stations} searchStation={searchStation} onSearchStation={setSearchStation} displayedStations={displayedStations} />}  />
-          <Route path="/time" element={<Time />} />
+          <Route path="/time/:id" element={<Time/>} />
         </Routes>
       </Router>
     </div>

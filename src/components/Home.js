@@ -4,7 +4,12 @@ const Home = () => {
    return (
       <div className="home-main-container">
          <div className="home-header">
-            <h1 className="home-head">OTM</h1>
+            <div className="head-circle">
+               <h1 className="home-head">OMT</h1>
+            </div>
+            <div className="home-body-container">
+
+            </div>
             <h3 className="home-body">An up-and-coming tech-startup in <br></br> New York City <br></br>
                that aims to provide you a better and smoother commute.<br></br>
                How? Well, by informing you the precise and accurate time of

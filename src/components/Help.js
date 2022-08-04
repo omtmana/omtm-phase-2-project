@@ -17,7 +17,7 @@ const Help = () => {
    const handleAddComment = (newComment) => {
       const updatedCommentSection = [...comment, newComment]
       setComment(updatedCommentSection)
-      console.log(newComment)
+      // console.log(newComment)
    }
 
    const handleSubmit = ((e) => {
@@ -42,8 +42,6 @@ const Help = () => {
          .then((res) => res.json())
          .then((newComment) => handleAddComment(newComment))
    })
-
-   console.log(firstName, lastName, email, textBox)
 
    return (
       <div className="help-container">
@@ -77,10 +75,10 @@ const Help = () => {
                   value={textBox}
                   onChange={(e) => setTextBox(e.target.value)}
                />
-               <button>Submit</button>
+               <button className="submit-button">Submit</button>
             </form>
          </div>
-         <div>
+         <div className="help-comment-form">
             {
                comment.map((data) => {
                   return <HelpFormSubmit key={data.id} data={data} />
