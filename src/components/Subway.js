@@ -6,6 +6,7 @@ const Subway = ({ stations, searchStation, onSearchStation, displayedStations  }
       <div>
          <div>
             <input
+            style={{fontFamily:'geneva' , fontSize:'1.2em' , letterSpacing: '.7em'}}
                className="searchbar"
                type="text"
                name="search"

@@ -34,10 +34,11 @@ const Time = ({ stations }) => {
          })
    }, [])
 
+
    return (
       <div className="time-container">
          <div className="time-head">
-            <h3>{currentTime}</h3>
+            <h1 style={{fontFamily:'geneva' }}>{currentTime}</h1>
          </div>
          <div className="time-body">
             {/* this is where the new api list will go */}

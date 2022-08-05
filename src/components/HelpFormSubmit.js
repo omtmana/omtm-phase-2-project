@@ -3,10 +3,12 @@ import React from "react";
 const helpFormSubmit = ({ data }) => {
    const { firstName, lastName, email, textBox } = data
    return (
-      <div className="help-form-submit">
-         <h5>{firstName} {lastName}</h5>
-         <h6>{email}</h6>
-         <p>{textBox}</p>
+      <div style={{ paddingLeft:'5em'}}>
+         <div className="help-form-submit" style={{ backgroundColor: 'white', border: 'white', width: '70em' , height:'10em' , paddingTop:'0.5em' }}>
+            <h2 style={{ fontFamily: 'geneva', letterSpacing: '0.2em' , color:'darkblue' }}>{firstName} {lastName}</h2>
+            <h6 style={{ fontFamily: 'geneva', letterSpacing: '0.2em' }}>{email}</h6>
+            <p style={{ fontFamily: 'geneva', letterSpacing: '0.1em' }}>{textBox}</p>
+         </div>
       </div>
    )
 }

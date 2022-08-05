@@ -46,36 +46,37 @@ const Help = () => {
    return (
       <div className="help-container">
          <div className="form-help-container">
+            <h1 style={{fontFamily:'geneva', textAlign:'left' , letterSpacing:'.25em' , fontSize:'4em' , }}>HAVE QUESTIONS?</h1>
             <form onSubmit={handleSubmit} className="handle-submit-help-form">
-               <input className="help-first-name"
+               <input className="help-first-name" style={{ fontFamily: 'geneva', letterSpacing: '0.2em' }}
                   type="text"
                   name="first name"
                   placeholder="First Name"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                />
-               <input className="help-last-name"
+               <input className="help-last-name" style={{ fontFamily: 'geneva', letterSpacing: '0.2em' }}
                   type="text"
                   name="last name"
                   placeholder="Last Name"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                />
-               <input className="help-email"
+               <input className="help-email" style={{ fontFamily: 'geneva', letterSpacing: '0.2em' }}
                   type="text"
                   name="email"
                   placeholder="Email Address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                />
-               <input className="help-text-box"
+               <input className="help-text-box" style={{ fontFamily: 'geneva', letterSpacing: '0.2em' }}
                   type="text"
                   name="text box"
                   placeholder="Write your questions here"
                   value={textBox}
                   onChange={(e) => setTextBox(e.target.value)}
                />
-               <button className="submit-button">Submit</button>
+               <button className="submit-button" style={{ fontFamily: 'geneva', letterSpacing: '0.2em' , backgroundColor:'white' }}>Submit</button>
             </form>
          </div>
          <div className="help-comment-form">

@@ -157,15 +157,16 @@
   flex-direction: column;
   gap: 5em;
   /* width: 10em; */
-  padding-left: 2em;
-  padding-top: 2em;
+  padding-left: 5em;
+  /* padding-top: 2em; */
+  padding-bottom: 2em;
   /* padding */
 }
 
 .handle-submit-help-form {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
 }
 
 .help-first-name {

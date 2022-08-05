@@ -27,7 +27,7 @@ const TimeList = ({arrivals}) => {
    } 
 
    return(
-      <div className="arrival-card" style={{ color: `${arrivalColor}` }}>
+      <div className="arrival-card" style={{ color: `${arrivalColor}` , border:'white' , backgroundColor:'white'}}>
          <h3>{arrivals}</h3>
       </div>
    )

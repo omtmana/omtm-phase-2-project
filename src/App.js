@@ -28,10 +28,10 @@ function App() {
           <div style={{ height: "100%", position: "absoulute", right: "0" }}>
             <img src="Untitled.png" style={{ height: "100%" }} />
           </div>
-          <Link className='home' to="/"> HOME </Link>
-          <Link to="/subway" className='subway'> SUBWAY </Link>
+          <Link className='home' to="/" style={{fontFamily: 'geneva' , letterSpacing:'0.25em' }}> HOME </Link>
+          <Link to="/subway" className='subway' style={{ fontFamily: 'geneva', letterSpacing: '0.25em' }} > SUBWAY </Link>
           {/* <Link to="/about"> About </Link> */}
-          <Link to="/help" className='help'> HELP </Link>
+          <Link to="/help" className='help' style={{ fontFamily: 'geneva', letterSpacing: '0.25em' }}> HELP </Link>
           {/* <Link to="/time"> Time </Link> */}
           <div style={{height:"100%" , position:"absoulute" , right:"0"}}>
             <img src="Untitled.png" style={{height:"100%"}} />
