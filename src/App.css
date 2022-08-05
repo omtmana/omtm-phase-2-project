@@ -222,6 +222,10 @@
   border-radius: 5px;
 }
 
+.submit-button:hover {
+  background-color: pink;
+}
+
 .searchbar {
   margin-top: 10px;
   /* width: 2px; */

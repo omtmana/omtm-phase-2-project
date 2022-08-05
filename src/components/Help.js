@@ -46,7 +46,7 @@ const Help = () => {
    return (
       <div className="help-container">
          <div className="form-help-container">
-            <h1 style={{fontFamily:'geneva', textAlign:'left' , letterSpacing:'.25em' , fontSize:'4em' , }}>HAVE QUESTIONS?</h1>
+            <h1 style={{fontFamily:'geneva', textAlign:'center' , letterSpacing:'.25em' , fontSize:'4em' , paddingTop:'2em' , color:'darkblue'}}>HAVE QUESTIONS?</h1>
             <form onSubmit={handleSubmit} className="handle-submit-help-form">
                <input className="help-first-name" style={{ fontFamily: 'geneva', letterSpacing: '0.2em' }}
                   type="text"
