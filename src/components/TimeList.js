@@ -18,18 +18,27 @@ const TimeList = ({arrivals}) => {
 
    // console.log(JSON.stringify(currentTime) - JSON.stringify(arrivals))
 
+   // console.log(currentTime)
+   // console.log(currentTime.getHours(0)-arrivals[0].getHours())
 
 
-   if (currentTime > arrivals ) {
-      arrivalColor = 'gray'
-   } else if (currentTime == arrivals) {
-      arrivalColor = 'red'
-   } 
+   // if (currentTime > arrivals ) {
+   //    arrivalColor = 'gray'
+   // } else if (currentTime == arrivals) {
+   //    arrivalColor = 'red'
+   // }
+
+   // for (let i=0;  i < arrivals.length ; i++) {
+   //    if ((currentTime.getHours() - ))
+   // }
+   // console.log(currentTime / 1000)
+
+   // color: `${arrivalColor}`,
 
    return(
-      <div className="arrival-card" style={{ color: `${arrivalColor}` , border:'white' , backgroundColor:'white'}}>
-         <h3>{arrivals}</h3>
-      </div>
+         <div className="arrival-card" style={{ border: 'white', backgroundColor: 'white' }}>
+            <h3>{arrivals}</h3>
+         </div>
    )
 }
 

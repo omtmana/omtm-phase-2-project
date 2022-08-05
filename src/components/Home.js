@@ -9,7 +9,7 @@ const Home = () => {
             </div>
             <div className="home-body" style={{height: '5em'}}>
                <h1 className="home-body-header" style={{fontFamily:'geneva' , letterSpacing:'0.25em'}}>WHAT WE DO</h1>
-               <h3 className="home-body-text" style={{ fontFamily: 'geneva', letterSpacing: '0.25em' , fontSize:'30px' }}>An up-and-coming tech-startup in New York City
+               <h3 className="home-body-text" style={{ fontFamily: 'geneva', letterSpacing: '0.25em' , fontSize:'30px' }}>An up-and-coming tech startup in New York City
                   that aims to provide you a better and smoother commute.<br></br>
                   How? Well, by informing you <br></br>the precise and accurate time of
                   the subway's arrival

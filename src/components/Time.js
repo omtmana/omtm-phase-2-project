@@ -34,6 +34,10 @@ const Time = ({ stations }) => {
          })
    }, [])
 
+   const handleTime = ((e) => {
+      e.preventDefault()
+   })
+
 
    return (
       <div className="time-container">
