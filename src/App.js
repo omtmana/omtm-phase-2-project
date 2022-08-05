@@ -22,7 +22,7 @@ function App() {
     return station.name.toLowerCase().includes(searchStation.toLowerCase())
   })
   return (
-    <div className="App">
+    <div className="App" style={{paddingLeft:'3em' , paddingRight:'3em'}}>
       <Router>
         <nav className='navigation-bar'>
           <div style={{ height: "100%", position: "absoulute", right: "0" }}>
