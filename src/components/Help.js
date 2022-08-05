@@ -48,28 +48,28 @@ const Help = () => {
          <div className="form-help-container">
             <h1 style={{fontFamily:'geneva', textAlign:'center' , letterSpacing:'.25em' , fontSize:'4em' , paddingTop:'2em' , color:'darkblue'}}>HAVE QUESTIONS?</h1>
             <form onSubmit={handleSubmit} className="handle-submit-help-form">
-               <input className="help-first-name" style={{ fontFamily: 'geneva', letterSpacing: '0.2em' }}
+               <input className="help-first-name" style={{ fontFamily: 'geneva', letterSpacing: '0.2em' , paddingLeft:'1em'}}
                   type="text"
                   name="first name"
                   placeholder="First Name"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
                />
-               <input className="help-last-name" style={{ fontFamily: 'geneva', letterSpacing: '0.2em' }}
+               <input className="help-last-name" style={{ fontFamily: 'geneva', letterSpacing: '0.2em', paddingLeft: '1em' }}
                   type="text"
                   name="last name"
                   placeholder="Last Name"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
                />
-               <input className="help-email" style={{ fontFamily: 'geneva', letterSpacing: '0.2em' }}
+               <input className="help-email" style={{ fontFamily: 'geneva', letterSpacing: '0.2em', paddingLeft: '1em' }}
                   type="text"
                   name="email"
                   placeholder="Email Address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                />
-               <input className="help-text-box" style={{ fontFamily: 'geneva', letterSpacing: '0.2em' }}
+               <input className="help-text-box" style={{ fontFamily: 'geneva', letterSpacing: '0.2em' , paddingLeft:'1em' }}
                   type="text"
                   name="text box"
                   placeholder="Write your questions here"

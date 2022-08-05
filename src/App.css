@@ -246,3 +246,11 @@
   width: 20%;
   border-radius: 10px;
 }
+
+.help-form-submit:hover {
+  filter: drop-shadow(-1px 2px 2px blue) ;
+}
+
+.individual-card:hover {
+  filter: drop-shadow(-1px 2px 2px blue);
+}

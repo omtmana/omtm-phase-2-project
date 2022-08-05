@@ -38,7 +38,7 @@ const Time = ({ stations }) => {
    return (
       <div className="time-container">
          <div className="time-head">
-            <h1 style={{fontFamily:'geneva' , color:'darkblue' }}>{currentTime}</h1>
+            <h1 style={{fontFamily:'geneva' , color:'darkblue' , letterSpacing:'.25em', paddingTop:'1em' , paddingBottom:'1em' }}>{currentTime}</h1>
          </div>
          <div className="time-body">
             {/* this is where the new api list will go */}

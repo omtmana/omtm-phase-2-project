@@ -6,7 +6,7 @@ const Subway = ({ stations, searchStation, onSearchStation, displayedStations  }
       <div>
          <div>
             <input
-            style={{fontFamily:'geneva' , fontSize:'1.2em' , letterSpacing: '.7em'}}
+            style={{fontFamily:'geneva' , fontSize:'1.2em' , letterSpacing: '.55em'}}
                className="searchbar"
                type="text"
                name="search"
@@ -15,7 +15,7 @@ const Subway = ({ stations, searchStation, onSearchStation, displayedStations  }
                onChange={(e) => onSearchStation(e.target.value)}
             />
          </div>
-         <div className="subway-station-container">
+         <div className="subway-station-container" style={{paddingTop:'1em'}}>
             {
                displayedStations.map((station) => {
                   return <SubwayCard key={station.id} subway={station} />
