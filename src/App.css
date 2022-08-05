@@ -29,7 +29,7 @@
 }
 
 .home-head:hover {
-  filter:drop-shadow(-1px 2px 20px yellow);
+  filter:drop-shadow(-1px 2px 15px yellow);
 }
 
 .head-circle {
@@ -177,11 +177,19 @@
   /* gap: 2em; */
 }
 
+.help-first-name:hover {
+  filter: drop-shadow(-1px 1px 1px yellow);
+}
+
 .help-last-name {
   height: 50px;
   width: 20em;
   font-family: menlo;
   font-size: 1em;
+}
+
+.help-last-name:hover {
+  filter: drop-shadow(-1px 1px 1px yellow);
 }
 
 .help-email {
@@ -191,11 +199,19 @@
   font-size: 1em;
 }
 
+.help-email:hover {
+  filter: drop-shadow(-1px 1px 1px yellow);
+}
+
 .help-text-box {
   height: 30em;
   width: 70em;
   font-family: menlo;
   font-size: 1em;
+}
+
+.help-text-box:hover {
+  filter: drop-shadow(-1px 1px 1px yellow);
 }
 
 .help-comment-form {
@@ -216,14 +232,14 @@
 
 .submit-button {
   color: black;
-  background-color: rgba(228, 155, 17, 0.884);
+  /* background-color: rgba(228, 155, 17, 0.884); */
   width: 15em;
   height: 5em;
   border-radius: 5px;
 }
 
 .submit-button:hover {
-  background-color: pink;
+  filter: drop-shadow(-1px 1px 1px black);
 }
 
 .searchbar {

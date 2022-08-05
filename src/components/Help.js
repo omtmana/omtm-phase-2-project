@@ -76,7 +76,7 @@ const Help = () => {
                   value={textBox}
                   onChange={(e) => setTextBox(e.target.value)}
                />
-               <button className="submit-button" style={{ fontFamily: 'geneva', letterSpacing: '0.2em' , backgroundColor:'white' }}>Submit</button>
+               <button className="submit-button" style={{ fontFamily: 'geneva', letterSpacing: '0.4em' , backgroundColor:'white' }}>SUBMIT</button>
             </form>
          </div>
          <div className="help-comment-form">
